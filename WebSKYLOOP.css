@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-bottom: solid 1px rgb(146, 146, 146);
+    height: 80px;
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các phần tử */
+    padding: 0 30px;
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ chỗ */
+}
+
+/* Định dạng cho logo SKYLOOP */
+#skyloop {
+    color: #ff4d6d;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    letter-spacing: 1px; /* Điều chỉnh khoảng cách giữa các chữ */
+}
+
+/* Định dạng cho các mục trong danh sách nằm ngang */
+.MucNgang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Định dạng cho nút dannh sách thả xuống */
+.DanhSachThaXuong {
+    position: relative; /* Định vị tương đối để có thể sử dụng cho phần tử con */
+    display: inline-block; /* Hiển thị dạng khối nội tuyến */
+}
+/* Định dạng cho nút tên danh sách */
+.TenDanhSach {
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* Định dạng cho nội dung danh sách */
+.NoiDungDanhSach {
+    display: none; /* Ẩn nội dung */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Đảm bảo danh sách thả xuống hiển thị trên các phần tử khác */
+}
+/* Định dạng cho các link trong danh sách thả xuống */
+.NoiDungDanhSach a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap; /* Ngăn chặn xuống dòng */
+}
+/* Đổi màu nền khi di chuột vào link trong danh sách thả xuống */
+.NoiDungDanhSach a:hover {
+    background-color: #f1f1f1;
+}
+/* Hiển thị danh sách thả xuống khi di chuột vào nút */
+.DanhSachThaXuong:hover .NoiDungDanhSach {
+    display: block; /* Hiển thị nội dung danh sách */
+}
+/* Đổi màu nền nút danh sách thả xuống khi di chuột vào nút */
+.DanhSachThaXuong:hover .TenDanhSach {
+    background-color: #ddd;
+}
+
+/* Định dạng cho ô input tìm kiếm */
+header input {
+    background: none;
+    border: none;
+    width: 190px;
+    padding: 10px;
+    padding-left: 40px;
+}
+/* Loại bỏ đường viền khi ô input được focus */
+header input:focus {
+    outline: none; /* Không có viền ngoài */
+}
+/* Định dạng cho các icon */
+header i {
+    font-size: 25px;
+}
+/* Định dạng cho nút tìm kiếm */
+.timkiem {
+    position: relative;
+    background-color: #f9f9f9;
+    border: none;
+    width: 230px;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* Định vị icon tìm kiếm bên trong ô input */
+.timkiem i {
+    position: absolute; /* Định vị tuyệt đối */
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Dịch chuyển icon lên giữa */
+}
+/* Định dạng cho nút giỏ hàng */
+.giohang {
+    color: #ff4d6d;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .MucNgang {
+        display: none;
+    }
+}
+/* Phần nội dung */
+article {
+    text-align: center;
+}
+.hinh img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.danhmuc {
+    background-color: #f1f1f1;
+    padding: 10px 0px 10px 0px;
+    margin-top: -5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.danhmuc h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: -50px;
+}
+#h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: -50px;
+}
+.body1 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.font-side {
+    margin-top: 100px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.font-side:hover {
+    border: none;
+    height: 320px;
+    width: 320px;
+    box-shadow: rgb(177, 177, 177) 1px 1px 2px 1px;
+    opacity: 1;
+}
+.font-side .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.font-side img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.font-side p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3a86ff;
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    padding: 6px 5px 0px 5px;
+    margin: 0;
+    color: white;
+    z-index: 2;
+}
+
+.font-side a {
+    color: black;
+    text-decoration: none;
+}
+.font-side a:hover{
+    color: #ff4d6d;
+}
+/* Giá */
+#price , #price1{
+    margin: 0px 20px 0px 20px ;
+}
+#price1 {
+    text-decoration: line-through;
+}
+.hop img{
+    object-fit: cover;
+}
+.hop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+.hop1 {
+    margin-right: -50px;
+    margin-left: -70px;
+}
+.hop1 img{
+    margin: 35px 0px 0px 0px;
+}
+.hop2 img{
+    margin: 35px 0px 0px 0px;
+}
+.hotro {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 40px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0px 10px 10px 0px;
+    position: fixed;
+    top: 400px;
+    left: 0px;
+}
+.nhanhieu {
+    background-color: #f1f1f1;
+    margin: 50px 0px 0px 0px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .hinh img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .danhmuc {
+        display: grid;
+    }
+    .timkiem {
+        width: 150px;
+    }
+}
+/* Phần chân */
+footer {
+    margin: 0;
+}
+.khuyenmai {
+    padding: 5px;
+    background-color: #ff4d6d;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hopnhapmail {
+    background-color: white;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 20px;
+}
+.khuyenmai input:focus {
+    outline: none;
+}
+.khuyenmai input {
+    border: none;
+    background: none;
+    margin: 10px 0px 10px 0px;
+}
+.khuyenmai button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 1px;
+}
+.congty {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    width: 400px;
+    
+}
+.congty h2{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif; /* Đặt font chữ */
+    letter-spacing: 1px; /* Điều chỉnh khoảng cách giữa các chữ */
+}
+/* Mục */
+#item {
+    display: block;
+    margin: 10px 0px 0px 0px;
+    width: 100%; /* Đặt chiều rộng cho các phần tử */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng chiều rộng của phần tử */
+}
+.noidungchan a{
+    text-decoration: none;
+    color: black;
+}
+.noidungchan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 10px 10px 10px;
+}
+.chinhsach a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    margin: 5px 0px 0px 0px;
+}
+.hotrokhachhang a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    margin: 5px 0px 0px 0px;
+}
+.thanhtoan a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    margin: 5px 0px 0px 0px;
+}
+.chuthich {
+    text-align: center;
+}
+/* Tem */
+.tem i{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;
+}
+.tem {
+    margin: 20px 0px 0px 0px;
+}

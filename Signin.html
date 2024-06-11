@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign In-SKYLOOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='WebSKYLOOP.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        article {
+            margin: 0;
+            padding: 30px 0px 30px 0px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        .Dangnhap {
+            width: 500px;
+            display: grid;
+            border-radius: 5px;
+            margin: 10px;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            padding: 50px;
+        }
+        .Dangnhap h1{
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            letter-spacing: 2px; /* Điều chỉnh khoảng cách giữa các chữ */
+        }
+        .dong {
+            display: grid;
+            margin: 0px 20px 10px 20px;
+        }
+        .dong p{
+            margin: 5px 0px 0px -220px;
+            color: #ff4d6d;
+            font-size: 10px;
+        }
+        .dong input:focus{
+            outline: none;
+        }
+        .dong input{
+            height: 30px;
+            box-shadow: inset 0 0 5px rgba(63, 63, 63, 0.1);
+            border: none;
+            border-radius: 5px;
+            padding: 5px 0px 5px 15px;
+            margin: 10px 0px 0px 0px;
+        }
+        .dong1 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .dong1 a{
+            text-decoration: none;
+            color: #ff4d6d;
+        }
+        #d1 {
+            color: black;
+        }
+        .dong2 {
+            display: grid;
+            margin: 10px 20px 10px 20px;
+        }
+        .dong2 button{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            margin: 10px 0px 0px 0px;
+        }
+        .dong2 a{
+            text-decoration: none;
+            color: black;
+        }
+        .dong3 {
+            padding: 10px 20px 20px 20px;
+        }
+        .dong3 a{
+            text-decoration: none;
+            color: #ff4d6d;
+        }
+        #d3 {
+            color: black;
+        }
+        #ngoaile {
+            margin: 20px 0px 10px 0px;
+            border: solid 1px rgb(137, 137, 137);
+            background: none;
+            border-bottom: none;
+        }
+        i{
+            font-size: 30px;
+            margin: 0px 40px 0px 0px;
+        }
+        .threenut button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px 0px 0px;
+        }
+        .threenut{
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(function(){
+            $("#TrangChu").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "WebSKYLOOP.html";
+    });
+            $("#brand").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Brand.html";
+    });
+            $("#product").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Product.html";
+    });
+            $("#news").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "News.html";
+    });
+            $("#DangNhap").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Login.html";
+    });
+            $("#DangKy").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Signin.html";
+    });
+        })
+    </script>
+    <header>
+        <div id="skyloop"><b>SKYLOOP</b></div>
+        <div class="timkiem">
+            <input type="search" placeholder="Search...">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="MucNgang">
+            <div><span id="TrangChu">Shop</span></div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="brand">Brand</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Brand.html">Symbolic</a>
+                    <a href="Brand.html">NewSeven</a>
+                    <a href="Brand.html">Lenvent</a>
+                    <a href="Brand.html">Cemmery</a>
+                </div>
+            </div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="product">Product</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Product.html">T-Shirt</a>
+                    <a href="Product.html">Jean</a>
+                    <a href="Product.html">Accessory</a>
+                    <a href="Product.html">Sweater</a>
+                    <a href="Product.html">Varsity</a>
+                </div>
+            </div>
+            <div id="news">News</div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach"><a id="DangKy"><b>Sign in</b></a></div>
+                <div class="NoiDungDanhSach">
+                    <a id="DangNhap">Login</a>
+                </div>
+            </div>
+            <div class="giohang"><i class='bx bxs-cart'></i></div>
+        </div>
+    </header>
+<article>
+    <div class="Dangnhap">
+        <h1>SIGN IN</h1>
+        <!-- Form đăng nhập -->
+        <form id="loginForm">
+        <div class="dong">
+            <input type="text" id="user" placeholder="Tên đăng nhập">
+            <p>Email hoặc số điện thoại</p>
+            <input type="password" id="pass" placeholder="Mật khẩu">
+            <p>Mật khẩu phải trên 8 kí tự</p>
+            <input type="password" id="passagain" placeholder="Nhập lại mật khẩu">
+            <p>Mật khẩu phải trùng nhau</p>
+        </div>
+        <div class="dong1">
+            <a id="d1"><input type="checkbox">Lưu mật khẩu</a>
+        </div>
+        <div class="dong2">
+            <button type="submit" id="Dangky">Đăng ký</button>
+            <div type="button" id="ngoaile"></div>
+            <div class="threenut">
+                <button type="submit"><a href="#" id="huydangky">Hủy đăng ký</a></button>
+            </div>
+        </div>
+        <div class="dong3">
+            <a id="d3">Bạn đã có tài khoản?</a>
+            <a href="#" id="dangnhap">Đăng nhập ngay</a>
+        </div>
+        </form>
+    </div>
+</article>
+<script type="text/javascript">
+    $(document).ready(function() {
+    // Biến để theo dõi trạng thái của checkbox "Nhớ mật khẩu"
+    var rememberChecked = false;
+
+    // Sự kiện click cho nút "Đăng ký"
+    $("#Dangky").click(function(){
+        // Lấy giá trị từ các ô nhập
+        var username = $("#user").val();
+        var password = $("#pass").val();
+        var passwordAgain = $("#passagain").val();
+        rememberChecked = $("#d1").is(":checked");
+
+        // Biểu thức chính quy để kiểm tra định dạng email
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Kiểm tra xem có nhập đủ thông tin không
+        if(username === "" || password === "" || passwordAgain === ""){
+            alert("Vui lòng nhập đầy đủ thông tin");
+        }
+        else if(!emailPattern.test(username)){
+            alert("Tài khoản phải là một địa chỉ email hợp lệ!");
+        }
+        else if(username.length < 10){
+            alert("Tài khoản phải là một số điện thoại hợp lệ (10 chữ số)!");
+        }
+        else if(password.length < 8){
+            alert("Mật khẩu phải dài ít nhất 8 ký tự!");
+        }
+        else if(password !== passwordAgain){
+            alert("Mật khẩu không trùng khớp");
+        } 
+        else {
+            if(rememberChecked){
+                // Lưu mật khẩu
+                localStorage.setItem("username", username);
+                localStorage.setItem("password", password);
+                
+                // Hiển thị thông báo lưu mật khẩu
+                alert("Thông tin đã được lưu.");
+                // Hiển thị thông báo đăng ký mới
+                alert("Bạn vừa thiết lập tài khoản mới: \nTài Khoản: " + username + "\nMật khẩu: " + password);
+
+                // Reset form
+                $("#loginForm")[0].reset();
+                // Chuyển hướng đến trang đăng nhập
+                window.location.href = "Login.html";
+
+            }
+            else {
+                // Hiển thị thông báo đăng ký mới
+                alert("Bạn vừa thiết lập tài khoản mới: \nTài Khoản: " + username + "\nMật khẩu: " + password);
+
+                // Reset form
+                $("#loginForm")[0].reset();
+                // Chuyển hướng đến trang đăng nhập
+                window.location.href = "Login.html";
+
+            }
+        }
+    });
+
+    // Sự kiện click cho nút "Hủy"
+    $("#huydangky").click(function(){
+        // Chuyển hướng đến trang đăng nhập
+        window.location.href = "Login.html";
+    });
+    // Sự kiện click cho nút "Đăng nhập"
+    $("#dangnhap").click(function(){
+        // Chuyển hướng đến trang đăng nhập
+        window.location.href = "Login.html";
+    });
+});
+</script>
+<footer>
+    <div class="khuyenmai">
+        <h4>NHẬN THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h4>
+        <div class="hopnhapmail">
+            <input type="email" placeholder="example@xyz.com">
+            <button type="submit">SAVE</button>
+        </div>
+    </div>
+<div class="noidungchan">
+    <div class="congty">
+        <h2 id="item">SKYLOOP</h2>
+        <a id="item">Mã sinh viên: 1771020650 <br> Họ tên: Nguyễn Quang Thịnh <br> Email: nguyenquangthinh87205@gmail.com</a>
+        <a id="item" href="#">Địa Chỉ: Nhà số 5, Ngách 6/7 Phố Xốm, Phường Phú Lãm, Quận Hà Đông, Thành Phố Hà Nội</a>
+        <a href="#" id="item">
+            <a class="tem" href="#"><i class='bx bx-phone' ></i></a>
+            <a class="tem" href="#"><i class='bx bxl-facebook' ></i></a>
+            <a class="tem" href="#"><i class='bx bxl-instagram' ></i></a>
+        </a>
+    </div>
+    <div class="chinhsach">
+        <a href="#"><b>Chính sách</b></a>
+        <a href="#" >Đổi trả hàng</a>
+        <a href="#" >Bảo hành</a>
+        <a href="#" >Vận chuyển</a>
+        <a href="#" >Thanh toán</a>
+        <a href="#" >Bảo mật thông tin</a>
+        <a href="#" >Khách hàng thân thiết</a>
+    </div>
+    <div class="hotrokhachhang">
+        <a href="#"><b>Hỗ trợ khách hàng</b></a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Đăng nhập</a>
+        <a href="#">Đăng ký</a>
+        <a href="#">Giỏ hàng</a>
+        <a href="#">Ưu đãi</a>
+    </div>
+    <div class="thanhtoan">
+        <a href="#"><b>Thanh toán</b></a>
+        <a href="#"><img style="    max-height: 50px;   margin-top: 20px;" src="//bizweb.dktcdn.net/100/448/472/themes/852542/assets/i_payment.png?1715757997258" alt="Phương thức thanh toán"></a>
+    </div>
+</div>
+<div class="chuthich">
+    <p>&copy; Company Skyloop 2024. Bản quyền thuộc một số Brand và chúng tôi.</p>
+</div>
+</footer>
+</body>
+</html>

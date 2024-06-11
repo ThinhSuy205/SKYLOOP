@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Symbolic®Star Sukajan Jacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Products.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Products.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            $("#TrangChu").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "WebSKYLOOP.html";
+    });
+            $("#brand").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Brand.html";
+    });
+            $("#product").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Product.html";
+    });
+            $("#news").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "News.html";
+    });
+            $("#DangNhap").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Login.html";
+    });
+            $("#DangKy").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Signin.html";
+    });
+        })
+    </script>
+    <header>
+        <div id="skyloop"><b>SKYLOOP</b></div>
+        <div class="timkiem">
+            <input type="search" placeholder="Search...">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="MucNgang">
+            <div><span id="TrangChu">Shop</span></div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="brand">Brand</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Brand.html">Symbolic</a>
+                    <a href="Brand.html">NewSeven</a>
+                    <a href="Brand.html">Lenvent</a>
+                    <a href="Brand.html">Cemmery</a>
+                </div>
+            </div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="product">Product</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Product.html">T-Shirt</a>
+                    <a href="Product.html">Jean</a>
+                    <a href="Product.html">Accessory</a>
+                    <a href="Product.html">Sweater</a>
+                    <a href="Product.html">Varsity</a>
+                </div>
+            </div>
+            <div id="news">News</div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach"><a id="DangNhap">Login</a></div>
+                <div class="NoiDungDanhSach">
+                    <a id="DangKy">Sign in</a>
+                </div>
+            </div>
+            <div class="giohang"><i class='bx bxs-cart'></i></div>
+        </div>
+    </header>
+    <script type="text/javascript" lang="javascript">
+        $(document).ready(function() {//truy cập bộ chọn
+            $(".gio").click(function(){
+                alert("Hiện tại tính năng giỏ hàng vẫn đang còn phát triển vui lòng quý khách thử lại sau.Xin cảm ơn!");
+            })
+        })
+    </script>
+
+<article>
+    <div class="body">
+        <div id="gallery-container">
+            <div id="gallery">
+                <img id="main-image" src="https://bizweb.dktcdn.net/100/448/472/products/star-sukajan-06-1701262546696.jpg?v=1701262552143" alt="Main Image">
+            </div>
+            <div id="thumbnails"></div>
+        </div>
+        <!---->
+        <div class="Noidung2">
+            <h4 id="productName">Symbolic®Star Sukajan Jacket</h4>
+            <p id="Gia"><a href="#" id="gia">369.000₫ </a> <a href="#" id="gia1">550.000₫</a></p>
+            <div id="size"><!--Kích cỡ sản phẩm-->
+                <button class="size-button">S</button>
+                <button class="size-button">M</button>
+                <button class="size-button">L</button>
+            </div>
+            <div id="color"><!--Màu Sản phẩm-->
+                <button class="color-button" id="mau1"></button>
+                <button class="color-button" id="mau2"></button>
+                <button class="color-button" id="mau3"></button>
+            </div>
+            <div id="HDsize">
+                <p>Size S : dài 64 - ngang 66</p>
+                <p>Size M : dài 66 - ngang 69</p>
+                <p>Size L : dài 69 - ngang 71</p>
+            </div>
+            <div id="ghichu">
+                <button class="GHTQ"><img src="https://bizweb.dktcdn.net/100/448/472/themes/852542/assets/icon_service_product_1.svg?1715757997258" alt=""> <p>Giao hàng toàn quốc </p></button>
+                <button class="TTKNH"><img src="https://bizweb.dktcdn.net/100/448/472/themes/852542/assets/icon_service_product_2.svg?1715757997258" alt=""> <p>Thanh toán khi nhận hàng </p></button>
+            </div>
+            <div id="SoLuong" class="custom custom-btn-numbers clearfix input_number_product">
+                <button id="giam" onclick="decrementQuantity()" class="btn-minus btn-cts" type="button">-</button>
+                <input aria-label="Số lượng" type="text" class="qty input-text" id="qty" name="quantity" size="4" value="1" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="validateQuantity()" fdprocessedid="cqtvqb">
+                <button id="tang" onclick="incrementQuantity()" class="btn-plus btn-cts" type="button">+</button>
+            </div>
+            <div id="Mua">
+                <button type="submit" id="TVGH">Thêm vào giỏ hàng</button>
+                <script>
+                    var button = document.getElementById("TVGH");
+                    button.addEventListener("click", function() {
+                      alert("Đã Thêm Vào Giỏ Hàng");
+                    });
+                </script>
+                <button type="submit" id="MN">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal để hiển thị ảnh lớn -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        // Xử lý modal khi nhấn vào ảnh
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("main-image");
+        var modalImg = document.getElementById("img01");
+        var span = document.getElementsByClassName("close")[0];
+
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+    <div class="body2">
+        <div class="radio-inputs">
+            <label class="radio">
+                <input type="radio" name="radio" checked onclick="showContent('product-info')">
+                <span class="name">Mô tả sản phẩm</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" onclick="showContent('buying-guide')">
+                <span class="name">Hướng dẫn mua hàng</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" onclick="showContent('return-policy')">
+                <span class="name">Chính sách đổi trả</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" onclick="showContent('storage-guide')">
+                <span class="name">Hướng dẫn bảo quản</span>
+            </label>
+        </div>
+    
+        <div id="product-info" class="content-section">
+            <h3>Symbolic®Star Sukajan Jacket</h3>
+            <p id="MoTaSanPham">Symbolic® Star Sukajan Jacket (Limited edition) <br>
+                - Unisex <br>
+                - Thêu trên nền vải kaki cotton <br>
+                - Size: S/M/L <br>
+                - Color: Black/Grey/Navy
+            </p>
+            <div id="HDsize">
+                <p>Size S : dài 64 - ngang 66</p>
+                <p>Size M : dài 66 - ngang 69</p>
+                <p>Size L : dài 69 - ngang 71</p>
+            </div>
+            <div id="ghichu">
+                <button class="GHTQ"><img src="https://bizweb.dktcdn.net/100/448/472/themes/852542/assets/icon_service_product_1.svg?1715757997258" alt=""> <p>Giao hàng toàn quốc </p></button>
+                <button class="TTKNH"><img src="https://bizweb.dktcdn.net/100/448/472/themes/852542/assets/icon_service_product_2.svg?1715757997258" alt=""> <p>Thanh toán khi nhận hàng </p></button>
+            </div>
+        </div>
+    
+        <div id="buying-guide" class="content-section" style="display:none;">
+            <h3>Hướng dẫn mua hàng</h3>
+            <p>Để mua hàng, bạn vui lòng làm theo các bước sau:</p>
+            <ol>
+                <li>Chọn sản phẩm bạn muốn mua.</li>
+                <li>Nhấn nút "Thêm vào giỏ hàng" hoặc "Mua ngay".</li>
+                <li>Điền thông tin giao hàng và chọn phương thức thanh toán.</li>
+                <li>Xác nhận đơn hàng và chờ nhận hàng tại nhà.</li>
+            </ol>
+        </div>
+    
+        <div id="return-policy" class="content-section" style="display:none;">
+            <h3>Chính sách đổi trả</h3>
+            <p>Nếu sản phẩm có vấn đề hoặc không đúng như mô tả, bạn có thể đổi trả trong vòng 7 ngày kể từ ngày nhận hàng.</p>
+            <ul>
+                <li>Sản phẩm chưa qua sử dụng và còn nguyên tem mác.</li>
+                <li>Đóng gói sản phẩm vào hộp và gửi lại cho chúng tôi.</li>
+                <li>Chúng tôi sẽ kiểm tra và tiến hành đổi trả hoặc hoàn tiền.</li>
+            </ul>
+        </div>
+    
+        <div id="storage-guide" class="content-section" style="display:none;">
+            <h3>Hướng dẫn bảo quản</h3>
+            <p>Để sản phẩm luôn bền đẹp, bạn nên:</p>
+            <ul>
+                <li>Giặt tay hoặc giặt máy ở chế độ nhẹ nhàng.</li>
+                <li>Tránh phơi dưới ánh nắng trực tiếp.</li>
+                <li>Không sử dụng chất tẩy mạnh.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showContent(sectionId) {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</article>
+<h1 id="h2">SẢN PHẨM CÙNG THƯƠNG HIỆU</h1>
+    <div class="body1">
+        <div class="font-side">
+            <div class="image-container" id="symbolic">
+                <p>Sale</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/star-sukajan-06-1701262546696.jpg?v=1701262552143" alt="Product Image">
+            </div><br>
+            <a href="Symbolic.html"><b>Symbolic®Star Sukajan Jacket</b></a><br><br>
+            <a href="Symbolic.html" id="price">369.000₫ </a> <a href="Symbolic.html" id="price1">550.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="symbolic3">
+                <p>Sale</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/9eb661075e21485f8e194fd863eebf49-tplv-o3syd03w52-origin-jpeg-jpeg.jpg?v=1704968846123" alt="Product Image">
+            </div><br>
+            <a href="Symbolic - Copy (3).html"><b>Symbolic®Bignine Tee</b></a><br><br>
+            <a href="Symbolic - Copy (3).html" id="price">219.000₫ </a> <a href="Symbolic - Copy (3).html" id="price1">320.000₫</a>
+        </div>
+        <!--
+        <div class="font-side">
+            <div class="image-container#">
+                <p>Hot</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/9eb661075e21485f8e194fd863eebf49-tplv-o3syd03w52-origin-jpeg-jpeg.jpg?v=1704968846123" alt="Product Image">
+            </div><br>
+            <a href="#"><b>Symbolic®Bignine Tee</b></a><br><br>
+            <a href="#" id="price">219.000₫ </a> <a href="" id="price1">320.000₫</a>
+        </div>
+        -->
+        <div class="font-side">
+            <div class="image-container" id="symbolic2">
+                <p>Sale</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/artboard-1.png?v=1704968783893" alt="Product Image">
+            </div><br>
+            <a href="Symbolic - Copy (2).html"><b>Symbolic®Bigquote Hoodie</b></a><br><br>
+            <a href="Symbolic - Copy (2).html" id="price">369.000₫ </a> <a href="Symbolic - Copy (2).html" id="price1">550.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="symbolic1">
+                <p>Hot</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/anh-chup-man-hinh-2023-06-27-luc-01-17-23-1687803820480.png?v=1687803826133" alt="Product Image">
+            </div><br>
+            <a href="Symbolic - Copy.html"><b>Symbolic Chemical Tee</b></a><br><br>
+            <a href="Symbolic - Copy.html" id="price">289.000₫ </a> <a href="Symbolic - Copy.html" id="price1">370.000₫</a>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $("#symbolic").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic.html";
+    });
+            $("#symbolic1").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic - Copy.html";
+    });
+            $("#symbolic2").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic - Copy (2).html";
+    });
+            $("#symbolic3").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic - Copy (3).html";
+    });
+        })
+    </script>
+    <footer>
+        <div class="khuyenmai">
+            <h4>NHẬN THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h4>
+            <div class="hopnhapmail">
+                <input type="email" placeholder="example@xyz.com">
+                <button type="submit">SAVE</button>
+            </div>
+        </div>
+    <div class="noidungchan">
+        <div class="congty">
+            <h2 id="item">SKYLOOP</h2>
+            <a id="item">Mã sinh viên: 1771020650 <br> Họ tên: Nguyễn Quang Thịnh <br> Email: nguyenquangthinh87205@gmail.com</a>
+            <a id="item" href="#">Địa Chỉ: Nhà số 5, Ngách 6/7 Phố Xốm, Phường Phú Lãm, Quận Hà Đông, Thành Phố Hà Nội</a>
+            <a href="#" id="item">
+                <a class="tem" href="#"><i class='bx bx-phone' ></i></a>
+                <a class="tem" href="#"><i class='bx bxl-facebook' ></i></a>
+                <a class="tem" href="#"><i class='bx bxl-instagram' ></i></a>
+            </a>
+        </div>
+        <div class="chinhsach">
+            <a href="#"><b>Chính sách</b></a>
+            <a href="#" >Đổi trả hàng</a>
+            <a href="#" >Bảo hành</a>
+            <a href="#" >Vận chuyển</a>
+            <a href="#" >Thanh toán</a>
+            <a href="#" >Bảo mật thông tin</a>
+            <a href="#" >Khách hàng thân thiết</a>
+        </div>
+        <div class="hotrokhachhang">
+            <a href="#"><b>Hỗ trợ khách hàng</b></a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Đăng nhập</a>
+            <a href="#">Đăng ký</a>
+            <a href="#">Giỏ hàng</a>
+            <a href="#">Ưu đãi</a>
+        </div>
+        <div class="thanhtoan">
+            <a href="#"><b>Thanh toán</b></a>
+            <a href="#"><img style="    max-height: 50px;   margin-top: 20px;" src="//bizweb.dktcdn.net/100/448/472/themes/852542/assets/i_payment.png?1715757997258" alt="Phương thức thanh toán"></a>
+        </div>
+    </div>
+    <div class="chuthich">
+        <p>&copy; Company Skyloop 2024. Bản quyền thuộc một số Brand và chúng tôi.</p>
+    </div>
+    </footer>
+</body>
+</html>

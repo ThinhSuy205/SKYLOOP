@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>News-SKYLOOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='WebSKYLOOP.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        #h2 {
+            margin: 100px 0px 0px 0px;
+        }
+        .tintuc {
+            display: grid;
+            place-content: center;
+            place-items: center;
+            width: 100%;
+        }
+        .symbolic {
+            margin: -100px 0px -100px 0px;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .symbolic img {
+            width: 400px;
+            height: 450px;
+            object-fit: cover;
+        }
+        .newseven {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .newseven img {
+            width: 300px;
+            height: 300px;
+        }
+        .levent {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .text {
+            padding: 10px;
+            width: 500px;
+            height: 400px;
+            text-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 768px) {
+            .text {
+                display: none;
+            }
+            .symbolic {
+                margin: -100px 0px -150px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(function(){
+            $("#TrangChu").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "WebSKYLOOP.html";
+    });
+            $("#brand").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Brand.html";
+    });
+            $("#product").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Product.html";
+    });
+            $("#news").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "News.html";
+    });
+            $("#DangNhap").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Login.html";
+    });
+            $("#DangKy").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Signin.html";
+    });
+        })
+    </script>
+    <header>
+        <div id="skyloop"><b>SKYLOOP</b></div>
+        <div class="timkiem">
+            <input type="search" placeholder="Search...">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="MucNgang">
+            <div><span id="TrangChu">Shop</span></div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="brand">Brand</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Brand.html">Symbolic</a>
+                    <a href="Brand.html">NewSeven</a>
+                    <a href="Brand.html">Lenvent</a>
+                    <a href="Brand.html">Cemmery</a>
+                </div>
+            </div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="product">Product</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Product.html">T-Shirt</a>
+                    <a href="Product.html">Jean</a>
+                    <a href="Product.html">Accessory</a>
+                    <a href="Product.html">Sweater</a>
+                    <a href="Product.html">Varsity</a>
+                </div>
+            </div>
+            <div id="news"><b>News</b></div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach"><a id="DangNhap">Login</a></div>
+                <div class="NoiDungDanhSach">
+                    <a id="DangKy">Sign in</a>
+                </div>
+            </div>
+            <div class="giohang"><i class='bx bxs-cart'></i></div>
+        </div>
+    </header>
+
+    <article>    
+        <h1 id="h2">TIN TỨC MỚI NHẤT</h1>
+    <div class="tintuc">
+        <div class="symbolic">
+            <div>
+                <img src="https://bizweb.dktcdn.net/thumb/grande/100/448/472/articles/we-are-hiring-2.jpg?v=1695979692927" alt="">
+            </div>
+            <div class="text">[ TUYỂN DỤNG ] Marketing Executive ( E-commerce) <br>
+                24/04/2023 <br><br>
+               1. Số lượng: 01 2. Mô tả công việc: - Theo dõi, phân tích số liệu, đề xuất kế hoạch
+                tối ưu hoá hiệu quả, thúc đẩy doanh số và tương tác khách hàng đa nền tảng. <br><br>
+                - Làm việc trực tiếp với các sàn TMĐT bao gồm Shopee, Lazada, TiktokShop.  <br><br>
+                - Tương tác với các bộ phận hỗ trợ PSC/KAM để giải quyết c...</div>
+        </div>
+        <div class="newseven">
+            <div>
+                <img src="https://newseven.vn/wp-content/uploads/2021/08/n7-600x600.jpg" alt="">
+            </div>
+            <div class="text">Thông báo quyết định đổi tên fanpage N7 Clothing <br>
+                Hi các bạn ! <br><br>
+                
+                Để đảm bảo tính đồng bộ với các nền tảng của N7 bên mình có quyết định đổi tên fanpage từ N7 Clothing
+                 thành N7 Official Mọi thứ vẫn vậy, chỉ có thay đổi tên 1 chút thôi các bạn nhé ? <br><br> Cám ơn tất cả các bạn, 
+                  và mong các bạn luôn ủng hộ và đồng hành cùng N7 Official trong thời gian sắp tới nha. <br><br>
+                
+                Link fanpage: https://www.facebook.com/n7clothing 
+                </div>
+        </div>
+        <div class="levent">
+            <div>
+                <iframe src="https://cdn.shopify.com/videos/c/vp/4366b3f6f309446f9e70ab3423800eb9/4366b3f6f309446f9e70ab3423800eb9.HD-720p-1.6Mbps-26210720.mp4" width="300px" height="200px" frameborder="0"></iframe>
+            </div>
+            <div class="text">LEVENTS® S/S24 COLLECTION <br>
+                Mùa Xuân 2024, Levents® mang đến bộ sưu tập mới với những items mang đậm tinh
+                thần sáng tạo để khích lệ chất riêng trong phong cách thời trang cũng như tính cách
+                của từng bạn trẻ.
+                
+                Các items đều được chăm chút tỉ mỉ đến từng chi tiết, thiết kế và chất liệu để mang
+                 đến những sản phẩm chất lượng vượt trội, độ bền cao, nổi bật nhưng vẫn thanh lịch
+                  và phù hợp với mọi giới tính cũng như dáng người. Đảm bảo bất kì ai cũng có thể 
+                   tự tin thể hiện bản thân, lan tỏa năng lượng tích cực khi diện lên mình các sản phẩm 
+                    đến từ Levents®.</div>
+        </div>
+    </div>
+    </article>
+    <footer>
+        <div class="khuyenmai">
+            <h4>NHẬN THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h4>
+            <div class="hopnhapmail">
+                <input type="email" placeholder="example@xyz.com">
+                <button type="submit">SAVE</button>
+            </div>
+        </div>
+    <div class="noidungchan">
+        <div class="congty">
+            <h2 id="item">SKYLOOP</h2>
+            <a id="item">Mã sinh viên: 1771020650 <br> Họ tên: Nguyễn Quang Thịnh <br> Email: nguyenquangthinh87205@gmail.com</a>
+            <a id="item" href="#">Địa Chỉ: Nhà số 5, Ngách 6/7 Phố Xốm, Phường Phú Lãm, Quận Hà Đông, Thành Phố Hà Nội</a>
+            <a href="#" id="item">
+                <a class="tem" href="0398071742"><i class='bx bx-phone' ></i></a>
+                <a class="tem" href="https://www.facebook.com/profile.php?id=100080965834950&mibextid=LQQJ4d"><i class='bx bxl-facebook' ></i></a>
+                <a class="tem" href="https://www.instagram.com/_qugthih07/"><i class='bx bxl-instagram' ></i></a>
+            </a>
+        </div>
+        <div class="chinhsach">
+            <a href="#"><b>Chính sách</b></a>
+            <a href="#" >Đổi trả hàng</a>
+            <a href="#" >Bảo hành</a>
+            <a href="#" >Vận chuyển</a>
+            <a href="#" >Thanh toán</a>
+            <a href="#" >Bảo mật thông tin</a>
+            <a href="#" >Khách hàng thân thiết</a>
+        </div>
+        <div class="hotrokhachhang">
+            <a href="#"><b>Hỗ trợ khách hàng</b></a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Đăng nhập</a>
+            <a href="#">Đăng ký</a>
+            <a href="#">Giỏ hàng</a>
+            <a href="#">Ưu đãi</a>
+        </div>
+        <div class="thanhtoan">
+            <a href="ThanhToan.html"><b>Thanh toán</b></a>
+            <a href="#"><img style="    max-height: 50px;   margin-top: 20px;" src="//bizweb.dktcdn.net/100/448/472/themes/852542/assets/i_payment.png?1715757997258" alt="Phương thức thanh toán"></a>
+        </div>
+    </div>
+    <div class="chuthich">
+        <p>&copy; Company Skyloop 2024. Bản quyền thuộc một số Brand và chúng tôi.</p>
+    </div>
+    </footer>
+</body>
+</html>

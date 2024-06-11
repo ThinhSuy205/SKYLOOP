@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Products-SKYLOOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='WebSKYLOOP.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        article {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(function(){
+            $("#TrangChu").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "WebSKYLOOP.html";
+    });
+            $("#brand").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Brand.html";
+    });
+            $("#product").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Product.html";
+    });
+            $("#news").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "News.html";
+    });
+            $("#DangNhap").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Login.html";
+    });
+            $("#DangKy").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Signin.html";
+    });
+        })
+    </script>
+    <header>
+        <div id="skyloop"><b>SKYLOOP</b></div>
+        <div class="timkiem">
+            <input type="search" placeholder="Search...">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="MucNgang">
+            <div><span id="TrangChu">Shop</span></div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="brand">Brand</div>
+                <div class="NoiDungDanhSach">
+                    <a href="Brand.html">Symbolic</a>
+                    <a href="Brand.html">NewSeven</a>
+                    <a href="Brand.html">Lenvent</a>
+                    <a href="Brand.html">Cemmery</a>
+                </div>
+            </div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach" id="product"><b>Product</b></div>
+                <div class="NoiDungDanhSach">
+                    <a href="Product.html">T-Shirt</a>
+                    <a href="Product.html">Jean</a>
+                    <a href="Product.html">Accessory</a>
+                    <a href="Product.html">Sweater</a>
+                    <a href="Product.html">Varsity</a>
+                </div>
+            </div>
+            <div id="news">News</div>
+            <div class="DanhSachThaXuong">
+                <div class="TenDanhSach"><a id="DangNhap">Login</a></div>
+                <div class="NoiDungDanhSach">
+                    <a id="DangKy">Sign in</a>
+                </div>
+            </div>
+            <div class="giohang"><i class='bx bxs-cart'></i></div>
+        </div>
+    </header>
+
+    <article>
+        <h1 id="h2">TẤT CẢ SẢN PHẨM</h1>
+    <div class="body1">
+        <div class="font-side">
+            <div class="image-container" id="symbolic">
+                <p>Sale</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/star-sukajan-06-1701262546696.jpg?v=1701262552143" alt="Product Image">
+            </div><br>
+            <a href="Symbolic.html"><b>Symbolic®Star Sukajan Jacket</b></a><br><br>
+            <a href="Symbolic.html" id="price">369.000₫ </a> <a href="Symbolic.html" id="price1">550.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="levent">
+                <p>Hot</p>
+                <img src="https://cdn.shopify.com/s/files/1/0681/2821/1221/files/MT_dbcfeefd-44db-462f-9614-90a3b2fe5819_533x.jpg?v=1708770982" alt="Product Image">
+            </div><br>
+            <a href="Levents.html"><b>Levents® 05 Jersey/ Red</b></a><br><br>
+            <a href="Levents.html" id="price">299.000₫ </a> <a href="Levents.html" id="price1"></a>
+        </div>
+        <!--
+        <div class="font-side">
+            <div class="image-container#">
+                <p>Hot</p>
+                <img src="https://cdn.shopify.com/s/files/1/0681/2821/1221/files/MT_dbcfeefd-44db-462f-9614-90a3b2fe5819_533x.jpg?v=1708770982" alt="Product Image">
+            </div><br>
+            <a href="#"><b>Levents® 05 Jersey/ Red</b></a><br><br>
+            <a href="#" id="price">299.000₫ </a>
+        </div>
+        -->
+        <div class="font-side">
+            <div class="image-container" id="newseven1">
+                <p>Sale</p>
+                <img src="https://newseven.vn/wp-content/uploads/2022/08/32249a1b156fd79458576c0f147d36ac.jpeg" alt="Product Image">
+            </div><br>
+            <a href="Newseven - Copy.html"><b>Áo Thun Polo N7 Newseven Minimalism V2</b></a><br><br>
+            <a href="Newseven - Copy.html" id="price">299.000₫ </a> <a href="Newseven - Copy.html" id="price1">350.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="cemmery">
+                <p>Hot</p>
+                <img src="https://product.hstatic.net/200000259629/product/11_9a3d9801fe3b48dda364c73fbe47493a_master.png" alt="Product Image">
+            </div><br>
+            <a href="Cemmery.html"><b>HAREM PANTS 3 MÀU</b></a><br><br>
+            <a href="Cemmery.html" id="price">195.000₫ </a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="cemmery2">
+                <p>New</p>
+                <img src="https://product.hstatic.net/200000259629/product/eb_133be98c0c24472c90f08facd0431db9_master.png" alt="Product Image">
+            </div><br>
+            <a href="Cemmery - Copy (2).html"><b>BASIC PACKBACK 2 MÀU</b></a><br><br>
+            <a href="Cemmery - Copy (2).html" id="price">295.000₫ </a> <a href="Cemmery - Copy (2).html" id="price1">350.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="symbolic2">
+                <p>Sale</p>
+                <img src="https://bizweb.dktcdn.net/thumb/large/100/448/472/products/artboard-1.png?v=1704968783893" alt="Product Image">
+            </div><br>
+            <a href="Symbolic - Copy (2).html"><b>Symbolic®Bigquote Hoodie</b></a><br><br>
+            <a href="Symbolic - Copy (2).html" id="price">369.000₫ </a> <a href="Symbolic - Copy (2).html" id="price1">550.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="newseven">
+                <p>Sale</p>
+                <img src="https://newseven.vn/wp-content/uploads/2022/06/NTT04195-2048x2048.jpg" alt="Product Image">
+            </div><br>
+            <a href="Newseven.html"><b>Quần Short INSERT</b></a><br><br>
+            <a href="Newseven.html" id="price">129.000₫ </a> <a href="Newseven.html" id="price1">280.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="levent1">
+                <p>Sale</p>
+                <img src="https://levents.asia/cdn/shop/files/Green_LSHOVCOB330UG0101SS24_1.jpg?v=1712136116&width=713" alt="Product Image">
+            </div><br>
+            <a href="Levents - Copy.html"><b>Levents® Horizontal Stripes Shirt</b></a><br><br>
+            <a href="Levents - Copy.html" id="price">330.000₫ </a> <a href="Levents - Copy.html" id="price1">420.000₫</a>
+        </div>
+        
+        <div class="font-side">
+            <div class="image-container" id="symbolic3">
+                <p>Sale</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/9eb661075e21485f8e194fd863eebf49-tplv-o3syd03w52-origin-jpeg-jpeg.jpg?v=1704968846123" alt="Product Image">
+            </div><br>
+            <a href="Symbolic - Copy (3).html"><b>Symbolic®Bignine Tee</b></a><br><br>
+            <a href="Symbolic - Copy (3).html" id="price">219.000₫ </a> <a href="Symbolic - Copy (3).html" id="price1">320.000₫</a>
+        </div>
+        
+        <div class="font-side">
+            <div class="image-container" id="symbolic1">
+                <p>Hot</p>
+                <img src="https://bizweb.dktcdn.net/100/448/472/products/anh-chup-man-hinh-2023-06-27-luc-01-17-23-1687803820480.png?v=1687803826133" alt="Product Image">
+            </div><br>
+            <a href="Symbolic - Copy.html"><b>Symbolic Chemical Tee</b></a><br><br>
+            <a href="Symbolic - Copy.html" id="price">289.000₫ </a> <a href="Symbolic - Copy.html" id="price1">370.000₫</a>
+        </div>
+        
+        <div class="font-side">
+            <div class="image-container" id="newseven2">
+                <p>Sale</p>
+                <img src="https://newseven.vn/wp-content/uploads/2021/11/long-2-768x768.jpg" alt="Product Image">
+            </div><br>
+            <a href="Newseven - Copy (2).html"><b>Áo Thun Trơn Dài Tay 9 Màu</b></a><br><br>
+            <a href="Newseven - Copy (2).html" id="price">99.000₫ </a> <a href="Newseven - Copy (2).html" id="price1">129.000₫</a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="newseven3">
+                <p>Hot</p>
+                <img src="https://newseven.vn/wp-content/uploads/2022/02/9462148a02c874afd1f539552336754f-768x768.jpeg" alt="Product Image">
+            </div><br>
+            <a href="Newseven - Copy (3).html"><b>Tất Cổ Cao N7 Newseven</b></a><br><br>
+            <a href="Newseven - Copy (3).html" id="price">35.000₫ </a> <a href="Newseven - Copy (3).html" id="price1"></a>
+        </div>
+        
+        <div class="font-side">
+            <div class="image-container" id="levent2">
+                <p>Hot</p>
+                <img src="https://levents.asia/cdn/shop/files/Pink_LSHOVCOB253UP0101SS24_1.jpg?v=1716285870&width=713" alt="Product Image">
+            </div><br>
+            <a href="Levents - Copy (2).html"><b>Levents® XL Logo Striped Shirt</b></a><br><br>
+            <a href="Levents - Copy (2).html" id="price">450.000₫ </a> <a href="Levents - Copy (2).html" id="price1"></a>
+        </div>
+        <div class="font-side">
+            <div class="image-container" id="levent3">
+                <p>Sale</p>
+                <img src="https://levents.asia/cdn/shop/files/DarkGreen_LPASTCON232UG0202SS24_1.jpg?v=1712318357&width=713" alt="Product Image">
+            </div><br>
+            <a href="Levents - Copy (3).html"><b>Levents® Cargo SweatPants/ Dark Green</b></a><br><br>
+            <a href="Levents - Copy (3).html" id="price">210.000₫ </a> <a href="Levents - Copy (3).html" id="price1">460.000₫</a>
+        </div>
+        
+        <div class="font-side">
+            <div class="image-container" id="cemmery1">
+                <p>Hot</p>
+                <img src="https://product.hstatic.net/200000259629/product/hoop_tee_d6c282c40b8b4c59843b668fa8460360_master.jpg" alt="Product Image">
+            </div><br>
+            <a href="Cemmery - Copy.html"><b>HOOP TEE 3 màu</b></a><br><br>
+            <a href="Cemmery - Copy.html" id="price">175.000₫ </a> <a href="Cemmery - Copy.html" id="price1"></a>
+        </div>
+        
+        <div class="font-side">
+            <div class="image-container" id="cemmery3">
+                <p>Sale</p>
+                <img src="https://product.hstatic.net/200000259629/product/1_2a4a8cf4160949f0b6039e09f83cfd1e_master.jpg" alt="Product Image">
+            </div><br>
+            <a href="Cemmery - Copy (3).html"><b>RIPPED JEANS #Black</b></a><br><br>
+            <a href="Cemmery - Copy (3).html" id="price">195.000₫ </a> <a href="Cemmery - Copy (3).html" id="price1">300.000₫</a>
+        </div>
+    </div>
+    </article>
+    <script>
+        $(function(){
+            $("#cemmery").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Cemmery.html";
+    });
+            $("#cemmery1").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Cemmery - Copy.html";
+    });
+            $("#cemmery2").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Cemmery - Copy (2).html";
+    });
+            $("#cemmery3").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Cemmery - Copy (3).html";
+    });
+            $("#symbolic").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic.html";
+    });
+            $("#symbolic1").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic - Copy.html";
+    });
+            $("#symbolic2").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic - Copy (2).html";
+    });
+            $("#symbolic3").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Symbolic - Copy (3).html";
+    });
+            $("#levent").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Levents.html";
+    });
+            $("#levent1").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Levents - Copy.html";
+    });
+            $("#levent2").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Levents - Copy (2).html";
+    });
+            $("#levent3").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Levents - Copy (3).html";
+    });
+            $("#newseven").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Newseven.html";
+    });
+            $("#newseven1").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Newseven - Copy.html";
+    });
+            $("#newseven2").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Newseven - Copy (2).html";
+    });
+            $("#newseven3").click(function(){
+        // Chuyển hướng đến trang khác
+        window.location.href = "Newseven - Copy (3).html";
+    });
+        })
+    </script>
+    <footer>
+        <div class="khuyenmai">
+            <h4>NHẬN THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h4>
+            <div class="hopnhapmail">
+                <input type="email" placeholder="example@xyz.com">
+                <button type="submit">SAVE</button>
+            </div>
+        </div>
+    <div class="noidungchan">
+        <div class="congty">
+            <h2 id="item">SKYLOOP</h2>
+            <a id="item">Mã sinh viên: 1771020650 <br> Họ tên: Nguyễn Quang Thịnh <br> Email: nguyenquangthinh87205@gmail.com</a>
+            <a id="item" href="#">Địa Chỉ: Nhà số 5, Ngách 6/7 Phố Xốm, Phường Phú Lãm, Quận Hà Đông, Thành Phố Hà Nội</a>
+            <a href="#" id="item">
+                <a class="tem" href="0398071742"><i class='bx bx-phone' ></i></a>
+                <a class="tem" href="https://www.facebook.com/profile.php?id=100080965834950&mibextid=LQQJ4d"><i class='bx bxl-facebook' ></i></a>
+                <a class="tem" href="https://www.instagram.com/_qugthih07/"><i class='bx bxl-instagram' ></i></a>
+            </a>
+        </div>
+        <div class="chinhsach">
+            <a href="#"><b>Chính sách</b></a>
+            <a href="#" >Đổi trả hàng</a>
+            <a href="#" >Bảo hành</a>
+            <a href="#" >Vận chuyển</a>
+            <a href="#" >Thanh toán</a>
+            <a href="#" >Bảo mật thông tin</a>
+            <a href="#" >Khách hàng thân thiết</a>
+        </div>
+        <div class="hotrokhachhang">
+            <a href="#"><b>Hỗ trợ khách hàng</b></a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Đăng nhập</a>
+            <a href="#">Đăng ký</a>
+            <a href="#">Giỏ hàng</a>
+            <a href="#">Ưu đãi</a>
+        </div>
+        <div class="thanhtoan">
+            <a href="ThanhToan.html"><b>Thanh toán</b></a>
+            <a href="#"><img style="    max-height: 50px;   margin-top: 20px;" src="//bizweb.dktcdn.net/100/448/472/themes/852542/assets/i_payment.png?1715757997258" alt="Phương thức thanh toán"></a>
+        </div>
+    </div>
+    <div class="chuthich">
+        <p>&copy; Company Skyloop 2024. Bản quyền thuộc một số Brand và chúng tôi.</p>
+    </div>
+    </footer>
+</body>
+</html>
